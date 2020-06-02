@@ -11,7 +11,7 @@
         </p>
 
         <ul class="flex justify-center">
-          <li class="mr-4" v-for="element in $static.metadata.social" :key="element.link">
+          <li v-for="element in $static.metadata.social" :key="element.link" class="mr-4">
             <a
               :href="element.link"
               class="block text-gray-500 hover:text-pink-500"
@@ -26,10 +26,7 @@
                 width="18"
                 height="18"
               >
-                <use
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  :xlink:href="socialIcon(element)"
-                />
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" :xlink:href="socialIcon(element)" />
               </svg>
             </a>
           </li>
@@ -43,19 +40,19 @@
 export default {
   methods: {
     socialIcon(element) {
-      return `/icons.svg#icon-${element.icon}`
+      return `/icons.svg#icon-${element.icon}`;
     }
   }
-}
+};
 </script>
 
 <static-query>
-query {
-  metadata {
-    social {
-      icon
-      link
+  query {
+    metadata {
+      social {
+        icon
+        link
+      }
     }
   }
-}
 </static-query>

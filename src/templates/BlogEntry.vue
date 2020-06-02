@@ -23,41 +23,33 @@
           >{{ $page.blog.image_caption }}</figcaption>
         </figure>
       </div>
-
       <div class="content post md:px-16">
-      
         <p v-html="$page.blog.excerpt"></p>
-
         <div v-html="$page.blog.content"></div>
-
         <ul class="flex pt-8 border-t border-gray-100">
-          <li class="mr-2" v-for="tag in $page.blog.tags" :key="tag.id">
+          <li v-for="tag in $page.blog.tags" :key="tag.id" class="mr-2">
             <g-link
               :to="tag.path"
               class="inline-block border border-pink-300 px-4 py-2 text-pink-500 text-xs font-semibold rounded hover:text-white hover:bg-pink-500 hover:border-pink-500"
-              
-            >{{ tag.title}}</g-link>
+            >{{ tag.title }}</g-link>
           </li>
         </ul>
       </div>
-
-      
     </section>
   </Layout>
 </template>
-
 
 <page-query>
   query($id: ID!) {
     blog(id: $id) {
       title
       path
-      image(width:1200)
+      image(width: 1200)
       image_caption
       excerpt
       content
-      humanTime : created(format:"Do MMMM YYYY")
-      datetime : created(format:"ddd MMM DD YYYY hh:mm:ss zZ")
+      humanTime: created(format: "Do MMMM YYYY")
+      datetime: created(format: "ddd MMM DD YYYY hh:mm:ss zZ")
       category {
         title
         path
@@ -71,9 +63,6 @@
         path
       }
     }
-
-
-    
   }
 </page-query>
 

@@ -3,13 +3,13 @@
     <nav
       id="mobile-nav"
       class="mobile-nav fixed left-0 top-0 h-screen w-full overflow-y-auto pt-12 bg-purple-900 z-50 md:hidden"
-      :class="toggleNav ? 'menu-visible': ''"
+      :class="toggleNav ? 'menu-visible' : ''"
     >
       <ul>
         <li
-          class="level-1 mb-4 md:mr-4 md:mb-0"
           v-for="element in $static.metadata.menu"
           :key="element.name"
+          class="level-1 mb-4 md:mr-4 md:mb-0"
         >
           <g-link
             :to="element.link"
@@ -24,7 +24,7 @@
     <button
       id="mobile-nav-toggle"
       class="mobile-nav-toggle block fixed h-16 w-full bottom-0 flex items-center justify-center font-bold border-none bg-purple-900 text-white z-50 focus:outline-none md:hidden"
-      :class="toggleNav ? 'menu-toggle-active': ''"
+      :class="toggleNav ? 'menu-toggle-active' : ''"
       aria-expanded="false"
       aria-controls="mobile-nav"
       @click="toggle"
@@ -40,33 +40,28 @@
   </div>
 </template>
 
-<static-query>
-query {
-  metadata {
-    menu {
-      name
-      link
-    }
-  }
-}
-</static-query>
-
 <script>
-let myBody = {
-  classList : {}
-};
 export default {
-
   data() {
     return {
       toggleNav: false
-    }
+    };
   },
   methods: {
     toggle() {
-      this.toggleNav = !this.toggleNav
+      this.toggleNav = !this.toggleNav;
     }
   }
-
-}
+};
 </script>
+
+<static-query>
+  query {
+    metadata {
+      menu {
+        name
+        link
+      }
+    }
+  }
+</static-query>

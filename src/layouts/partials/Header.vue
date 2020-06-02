@@ -9,13 +9,12 @@
       to="/"
       aria-label="Back to home"
     >{{ $static.metadata.siteName }}</g-link>
-
     <nav id="nav" class="nav hidden md:flex">
       <ul class="menu flex flex-col md:flex-row items-center list-reset text-base">
         <li
-          class="level-1 mb-4 md:mr-4 md:mb-0"
           v-for="element in $static.metadata.menu"
           :key="element.name"
+          class="level-1 mb-4 md:mr-4 md:mb-0"
         >
           <g-link
             :to="element.link"
@@ -40,13 +39,13 @@ export default {
 </script>
 
 <static-query>
-query {
-  metadata {
-    siteName
-    menu {
-      name
-      link
+  query {
+    metadata {
+      siteName
+      menu {
+        name
+        link
+      }
     }
   }
-}
 </static-query>

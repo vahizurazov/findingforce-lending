@@ -11,7 +11,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout);
   Vue.component('icon', FontAwesomeIcon);
   // Add attributes to HTML tag
-  head.htmlAttrs = { lang: 'en', class: 'min-h-full antialiased' };
+  head.htmlAttrs = { lang: 'en' };
 
   // Add attributes to BODY tag
   // head.bodyAttrs = { class: 'text-purple-900 leading-normal text-lg' };

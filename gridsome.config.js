@@ -1,5 +1,8 @@
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'Finding Force',
+  siteUrl: process.env.VUE_APP_DOMAIN,
+  siteDescription:
+    'FindingForce runs solid technology solution to bring you fully autorated adaptive and meaningfull advisory at zero cost. Get information about licenses and costs',
 
   plugins: [
     {

@@ -1,0 +1,9 @@
+@mixin name {
+  font-size: 100px;
+}
+.test {
+  &::before {
+    font-size: 200px;
+    @include name();
+  }
+}

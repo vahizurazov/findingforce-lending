@@ -1,0 +1,16 @@
+.transition {
+  transition: 0.25s all ease-out;
+}
+
+/* don't hide from screen readers */
+.visually-hidden {
+  position: absolute;
+  height: auto;
+  white-space: 'nowrap';
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  width: 1px;
+}

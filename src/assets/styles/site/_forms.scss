@@ -1,0 +1,98 @@
+input[type='text'],
+input[type='url'],
+input[type='tel'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='search'],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  line-height: 21px;
+  border: 1px solid $color-solitude;
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: normal;
+  border-radius: 3px;
+  color: $color-black;
+  background-color: $color-white;
+  &:focus {
+    border-color: $color-dodger-blue;
+    outline-color: $color-dodger-blue;
+    box-shadow: 0 0 0 0.2525em rgba(33, 188, 255, 0.25);
+    border-radius: 3px;
+  }
+  &:hover {
+    border-color: $color-dodger-blue;
+  }
+}
+.select {
+  & select {
+    width: 100%;
+    min-height: 42px;
+    padding: 10px 15px;
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    border: 1px solid $color-solitude;
+    color: $color-black;
+    border-radius: 3px;
+    background-color: $color-white;
+    &:active,
+    &:focus {
+      border-color: $color-dodger-blue;
+      outline-color: $color-dodger-blue;
+      box-shadow: 0 0 0 0.2525em rgba(33, 188, 255, 0.25);
+      border-radius: 3px;
+    }
+    &:hover {
+      border-color: $color-dodger-blue;
+    }
+  }
+}
+
+input::placeholder {
+  color: $color-cadet-blue;
+}
+
+label {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  color: $color-cadet-blue;
+}
+input[type='checkbox'].css-checkbox {
+  position: absolute;
+  z-index: -1000;
+  left: -1000px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+input[type='checkbox'].css-checkbox + label.css-label {
+  padding-left: 14px;
+  height: 14px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+}
+
+input[type='checkbox'].css-checkbox:checked + label.css-label {
+  background-position: 0 -14px;
+}
+label.css-label {
+  background-image: url('~@/assets/images/csscheckbox.svg');
+  user-select: none;
+}

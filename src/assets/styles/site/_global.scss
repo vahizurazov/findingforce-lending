@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font: $font-size-base#{"/"}$line-height-base $font-primary;
+  font-weight: normal;
+  color: $color-black;
+  letter-spacing: -0.5px;
+  background: $bg-body;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.wrap-container {
+  // position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

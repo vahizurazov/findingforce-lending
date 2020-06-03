@@ -1,0 +1,12 @@
+@mixin link() {
+  border: 0;
+  background: 0;
+  padding: 0;
+  color: $color-link;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: $color-link-hover;
+    text-decoration: none;
+  }
+}

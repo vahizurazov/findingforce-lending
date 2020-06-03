@@ -1,0 +1,85 @@
+.btn-large {
+  height: 50px;
+  font-family: $font-primary;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  border: 2px solid $color-dodger-blue;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn-small {
+  height: 40px;
+  font-family: $font-primary;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  border: 2px solid $color-dodger-blue;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.button {
+  font-family: $font-primary;
+  &:focus {
+    border-color: $color-dodger-blue;
+    color: $color-dodger-blue;
+  }
+  &:disabled {
+    border-color: $color-dodger-blue;
+  }
+}
+.main-color {
+  color: $color-dodger-blue;
+  border-color: $color-dodger-blue;
+  background-color: $color-white;
+  &:hover {
+    color: $color-white;
+    border-color: $color-dodger-blue;
+    background-color: $color-dodger-blue;
+  }
+  &:active {
+    color: $color-dodger-blue;
+    border-color: $color-dodger-blue;
+    background-color: $color-white;
+  }
+}
+.main-color-inversion {
+  color: $color-white;
+  border-color: $color-dodger-blue;
+  background-color: $color-dodger-blue;
+  &:hover {
+    color: $color-dodger-blue;
+    border-color: $color-dodger-blue;
+    background-color: $color-white;
+  }
+  &:focus {
+    border-color: $color-dodger-blue;
+    color: $color-white;
+    &:hover {
+      color: $color-dodger-blue;
+    }
+  }
+}
+.secondary-color {
+  color: $color-white;
+  border-color: $color-cadet-blue;
+  background-color: $color-cadet-blue;
+  &:hover {
+    color: $color-cadet-blue;
+    border-color: $color-cadet-blue;
+    background-color: $color-white;
+  }
+  &:focus {
+    color: $color-white;
+    border-color: $color-cadet-blue;
+    background-color: $color-cadet-blue;
+    &:hover {
+      color: $color-cadet-blue;
+      border-color: $color-cadet-blue;
+      background-color: $color-white;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@mixin ff-checkbox-checked {
+  &::before {
+    outline: 0;
+    background-color: $color-primary !important;
+  }
+  &::after {
+    background-color: $color-primary !important;
+  }
+}
+@mixin ff-checkbox-unchecked {
+  &::before {
+    outline: 0;
+    background-color: $color-primary !important;
+    border-color: $color-primary !important;
+  }
+}
+.field {
+  .is-checkradio[type="checkbox"].is-info:checked.has-background-color + label {
+    @include ff-checkbox-checked();
+  }
+  .is-checkradio[type="checkbox"].is-info.has-background-color + label {
+    @include ff-checkbox-unchecked();
+  }
+}

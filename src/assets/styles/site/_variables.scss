@@ -1,0 +1,92 @@
+$font-primary: "Poppins", sans-serif;
+
+$container-offset: 15px;
+
+$darken-color-index: 40;
+
+$font-size-base: 16px;
+$line-height-base: 24px;
+
+$font: 16px/24px $font-primary;
+// $font-size-sm: 12px;
+// $line-height-sm: 16px;
+
+// $font-size-lg: 18px;
+// $line-height-lg: 26px;
+
+// $font-size-base-mobile: 16px;
+// $line-height-base-mobile: 24px;
+
+// $font-size-sm-mobile: 14px;
+// $line-height-sm-mobile: 20px;
+
+// $font-size-lg-mobile: 20px;
+// $line-height-lg-mobile: 28px;
+
+// Color palette
+$color-white: #fff;
+$color-black: #000;
+// $color-alabaster: #f8f8f8;
+$color-gallery: #f0f0f0;
+$color-alto: #d2d2d2;
+$color-gray: #828282;
+$color-dove-gray: #6a6a6a;
+$color-emperor: #515151;
+$color-mine-shaft: #333;
+$color-zeus: #211915;
+$color-cello: #1f325d;
+$color-resolution-blue: #02327c;
+$color-rhino: #263c55;
+$color-robins-egg-blue: #00bfb3;
+$color-puerto-rico: #45b5aa;
+$color-persimmon: #ff5f58;
+$color-red: #ff0101;
+$color-catskill-white: #f1f9f9;
+$color-blue-whale: #0f334a;
+$color-wedgewood: #546a7b;
+$color-medium-turquoise: #46c8b8;
+$color-alice-blue: #f4f6f8;
+$color-solitude: #e2e7ee;
+$color-medium-aquamarine: #6ae7a4;
+$color-bali-hai: #8a9fae;
+$color-mandy: #ea4d5c;
+$color-dodger-blue: #21bcff;
+$color-mercury: #e5e5e5;
+$color-alabaster: #fafafa;
+$color-athens-gray: #ebedf0;
+$color-silver: #c5c5c5;
+$color-mystic: #dde3ec;
+$color-cadet-blue: #a4adbc;
+$color-pattens-blue: #e6ecee;
+$color-night-rider: #343434;
+$color-link-water: #c9d1de;
+
+$bg-body: $color-white;
+$bg-company-page: $color-athens-gray;
+
+$color-main: $color-dodger-blue;
+$color-secondary: $color-cadet-blue;
+$color-link: $color-main;
+$color-link-hover: darken($color-link, $darken-color-index);
+$color-border: rgba(0, 0, 0, 0.25);
+$color-box-shadow: rgba(51, 51, 79, 0.06);
+
+$color-primary: $color-dodger-blue;
+$color-danger: $color-mandy;
+$color-warning: $color-red;
+
+$default-border-radius: 5px;
+$default-box-shadow: 0 2px 12px 0 $color-box-shadow;
+$focus-box-shadow: 0px 0px 1px 1px $color-primary;
+
+// Tables
+$table-bg: transparent;
+
+$breakpoint-sm: 320px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xlg: 1440px;
+
+$breakpoint-sm-max: $breakpoint-md - 1px;
+$breakpoint-md-max: $breakpoint-lg - 1px;
+$breakpoint-lg-max: $breakpoint-xlg - 1px;

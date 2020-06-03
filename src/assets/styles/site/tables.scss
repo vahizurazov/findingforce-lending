@@ -1,0 +1,18 @@
+table {
+  background-color: $table-bg;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table-responsive {
+  @media only screen and (max-width: $breakpoint-lg-max) {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; // iOS momentum-based scrolling
+  }
+
+  @media only screen and (max-width: $breakpoint-md-max) {
+    width: 100%;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+}

@@ -1,0 +1,64 @@
+@mixin ff-switch-checked {
+  &::before {
+    outline: 0;
+  }
+  &::after {
+    left: 1.5rem;
+  }
+}
+
+@mixin ff-switch-unchecked {
+  &::before {
+    background: $color-solitude;
+    outline: 0;
+    height: 1rem;
+    top: 6px;
+  }
+  &::after {
+    outline: 0;
+    height: 25px;
+    width: 25px;
+    top: 0.15rem;
+    left: 0rem;
+    box-shadow: 1px 2px 6px $color-link-water;
+  }
+}
+
+@mixin ff-switch-info {
+  &::before {
+    background: $color-primary;
+  }
+}
+
+@mixin ff-switch-outlined {
+  &::before {
+    background: $color-white;
+  }
+}
+
+@mixin ff-switch-outlined-info {
+  &::after {
+    background: $color-primary;
+  }
+  &::before {
+    border-color: $color-primary !important;
+  }
+}
+
+.field {
+  .switch[type="checkbox"] + label {
+    @include ff-switch-unchecked();
+  }
+  .switch[type="checkbox"]:checked + label {
+    @include ff-switch-checked();
+  }
+  .switch[type="checkbox"].is-info:checked + label {
+    @include ff-switch-info();
+  }
+  .switch[type="checkbox"].is-outlined:checked + label {
+    @include ff-switch-outlined();
+  }
+  .switch[type="checkbox"].is-info.is-outlined:checked + label {
+    @include ff-switch-outlined-info();
+  }
+}

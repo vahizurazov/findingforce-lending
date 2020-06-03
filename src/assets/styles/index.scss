@@ -1,0 +1,12 @@
+@import '~normalize-scss';
+@import '~animate.css/source/_base.css';
+@import '~animate.css/source/fading_entrances/fadeIn.css';
+@import '~animate.css/source/fading_exits/fadeOut.css';
+@include normalize();
+
+@import 'bulma/index';
+
+@import 'site';
+
+// Override lib styles
+@import 'font-awesome';

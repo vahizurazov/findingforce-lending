@@ -1,0 +1,7 @@
+@mixin ff-text-info {
+  color: $color-primary !important;
+}
+
+.has-text-info {
+  @include ff-text-info();
+}

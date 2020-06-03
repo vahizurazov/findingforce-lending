@@ -4,9 +4,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Blog',
-    array: [3, 4, 5],
-    object: { sss: true }
+    title: 'Blog'
   }
 };
 </script>

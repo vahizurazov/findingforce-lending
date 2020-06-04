@@ -3,6 +3,7 @@
     <h1>404 not found</h1>
   </div>
 </template>
+
 <script>
 export default {
   name: 'NotFoundPage',
@@ -11,6 +12,7 @@ export default {
   }
 };
 </script>
+
 <style lang="scss" scoped>
 .not-route {
   display: flex;

@@ -70,7 +70,8 @@
 export default {
   metaInfo() {
     return {
-      title: this.$page.blog.title
+      title: this.$page.blog.title,
+      meta: [{ name: 'resource-type', content: this.$page.blog.title }]
     };
   }
 };

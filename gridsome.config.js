@@ -1,6 +1,8 @@
+const SEO = require('./src/configs/seo-settings');
+
 module.exports = {
   siteName: 'Finding Force',
-  siteUrl: process.env.VUE_APP_DOMAIN,
+  siteUrl: process.env.GRIDSOME_APP_DOMAIN,
   siteDescription:
     'FindingForce runs solid technology solution to bring you fully autorated adaptive and meaningfull advisory at zero cost. Get information about licenses and costs',
 
@@ -35,6 +37,14 @@ module.exports = {
           }
         }
       }
+    },
+    {
+      use: 'gridsome-plugin-robots-txt',
+      options: SEO.robots
+    },
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: SEO.sitemap
     }
   ],
   templates: {

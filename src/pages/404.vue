@@ -5,6 +5,7 @@
 </template>
 <script>
 export default {
+  name: 'NotFoundPage',
   metaInfo: {
     title: '404'
   }
@@ -17,7 +18,8 @@ export default {
   margin: 100px 400px;
   text-align: center;
   h1 {
-    font-size: 300px;
+    font-size: 100px;
+    line-height: 1em;
   }
 }
 </style>

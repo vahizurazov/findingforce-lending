@@ -3,8 +3,10 @@
 
 <script>
 export default {
+  name: 'About',
   metaInfo: {
-    title: 'About'
+    title: 'About',
+    meta: [{ name: 'resource-type', content: 'About us' }]
   }
 };
 </script>

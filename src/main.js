@@ -6,6 +6,8 @@ import FontAwesomeIcon from '@/configs/vue-awesome';
 
 import '@/assets/styles/index.scss';
 
+import Meta from '@/configs/meta-config';
+
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
@@ -54,6 +56,30 @@ export default function (Vue, { router, head, isClient }) {
       as: 'font',
       type: 'font/woff2',
       crossorigin: ''
+    },
+    {
+      href: process.env.GRIDSOME_APP_DOMAIN,
+      rel: 'canonical'
     }
+  );
+
+  // Add Global meta
+  head.meta.push(
+    Meta.main.title,
+    Meta.main.keywords,
+    Meta.main.robots,
+    Meta.main.url,
+    Meta.main.copyright,
+    Meta.main.designer,
+    Meta.og.description,
+    Meta.og.image,
+    Meta.og.title,
+    Meta.og.type,
+    Meta.og.url,
+    Meta.twitter.card,
+    Meta.twitter.description,
+    Meta.twitter.image,
+    Meta.twitter.title,
+    Meta.twitter.url
   );
 }

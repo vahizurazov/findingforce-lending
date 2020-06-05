@@ -8,7 +8,9 @@
     "develop": "gridsome develop",
     "explore": "gridsome explore",
     "lint": "eslint --ext .js,.vue src/ --fix",
-    "serve": "serve ./dist"
+    "serve": "serve ./dist",
+    "newpost": "node scripts/newPost.js",
+    "newpage": "node scripts/newPage.js"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.0",
@@ -45,6 +47,7 @@
     "eslint-plugin-vue": "^7.0.0-alpha.5",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.7",
+    "moment": "^2.26.0",
     "normalize-scss": "^7.0.1",
     "prettier": "^2.0.5",
     "serve": "^11.3.1",

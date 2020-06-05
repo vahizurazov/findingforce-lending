@@ -39,6 +39,17 @@ module.exports = {
       }
     },
     {
+      use: `gridsome-plugin-netlify-cms`,
+      options: {
+        htmlTitle: 'Content Editor',
+        htmlPath: 'static/admin/index.html',
+        configPath: 'static/admin/config.yml',
+        publicPath: '/admin',
+        modulePath: 'src/cms/cms.js',
+        enableIdentityWidget: true
+      }
+    },
+    {
       use: 'gridsome-plugin-robots-txt',
       options: SEO.robots
     },

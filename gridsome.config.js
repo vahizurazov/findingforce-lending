@@ -1,5 +1,3 @@
-const SEO = require('./src/configs/seo-settings');
-
 module.exports = {
   siteName: 'Finding Force',
   siteUrl: process.env.GRIDSOME_APP_DOMAIN,
@@ -51,11 +49,39 @@ module.exports = {
     },
     {
       use: 'gridsome-plugin-robots-txt',
-      options: SEO.robots
+      options: {
+        host: process.env.GRIDSOME_APP_DOMAIN,
+        sitemap: `${process.env.GRIDSOME_APP_DOMAIN}/sitemap.xml`,
+        policy: [
+          {
+            userAgent: '*',
+            allow: '/'
+          }
+        ]
+      }
     },
     {
       use: '@gridsome/plugin-sitemap',
-      options: SEO.sitemap
+      options: {
+        exclude: ['/tag/*', '/category/*'],
+        config: {
+          '/': {
+            lastmod: new Date().toISOString().slice(0, 10),
+            changefreq: 'weekly',
+            priority: 0.6
+          },
+          '/blog/*': {
+            lastmod: new Date().toISOString().slice(0, 10),
+            changefreq: 'monthly',
+            priority: 0.7
+          },
+          '/about': {
+            lastmod: new Date().toISOString().slice(0, 10),
+            changefreq: 'monthly',
+            priority: 0.8
+          }
+        }
+      }
     }
   ],
   templates: {

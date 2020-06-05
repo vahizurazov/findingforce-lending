@@ -1,5 +1,6 @@
 const meta = {
   title: 'Finding Force',
+  host: process.env.GRIDSOME_APP_DOMAIN,
   description:
     'FindingForce runs solid technology solution to bring you fully autorated adaptive and meaningfull advisory at zero cost. Get information about licenses and costs',
   owner: 'https://sparkybit.com/',

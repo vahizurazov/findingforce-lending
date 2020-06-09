@@ -1,10 +1,7 @@
 <template>
   <section class="external-app">
     <iframe
-      src="http://findingforce-test.westeurope.cloudapp.azure.com/introduction"
-      style="position: absolute; height: 100%; border: none"
-      height="100%"
-      width="100%"
+      src="https://findingforce-test.westeurope.cloudapp.azure.com/introduction"
       scrolling="no"
       frameborder="0"
     ></iframe>
@@ -25,5 +22,6 @@ export default {
 iframe {
   position: absolute;
   height: 100%;
+  width: 100%;
 }
 </style>

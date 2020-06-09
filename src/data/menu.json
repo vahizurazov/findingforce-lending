@@ -11,6 +11,10 @@
     {
       "name": "Blog",
       "link": "/blog"
+    },
+    {
+      "name": "Introduction",
+      "link": "/introduction"
     }
   ]
 }

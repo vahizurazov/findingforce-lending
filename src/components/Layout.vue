@@ -2,10 +2,10 @@
   <div>
     <a class="visually-hidden" href="#main">Finding Force</a>
 
-    <div class="wrapper">
+    <div class="container wrap-container root-content">
       <AppHeader />
 
-      <main class="container">
+      <main>
         <slot />
       </main>
 

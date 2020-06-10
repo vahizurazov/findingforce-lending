@@ -1,17 +1,12 @@
 <template>
   <header class="section-header" :class="[ classNameforSummaryPage() ? 'header-summary' : '']">
-    <!-- <div class="wrap-logo">
-      <router-link :to="{name: 'home'}" class="wrap-item">
-        <img src="@/assets/images/FF_logo.svg" alt="Logo" />
-      </router-link>
-    </div>-->
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
           <div class="nav-logo">
-            <router-link :to="{name: 'home'}">
-              <img src="../../assets/images/FF_logo.svg" alt="Logo" />
-            </router-link>
+            <g-link :to="{name: 'home'}">
+              <g-image src="../../assets/images/FF_logo.svg" alt="Logo" />
+            </g-link>
           </div>
           <div id="navbarMenu" class="navbar-menu">
             <nav>
@@ -28,10 +23,10 @@
           </div>
           <div class="wrap-start-btn">
             <div class="wrap-btn">
-              <router-link
-                to="introduction"
+              <g-link
+                to="/introduction/"
                 class="button btn-large main-color is-outlined is-rounded"
-              >Find my force</router-link>
+              >Find my force</g-link>
             </div>
           </div>
         </div>
@@ -68,7 +63,6 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/styles/site/_variables';
 .section-header {
-  // padding: 11px 0;
   position: relative;
   &.header-summary {
     .wrap-logo {
